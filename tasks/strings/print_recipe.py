@@ -33,8 +33,9 @@ def print_recipe() -> str:
     :return: отформатированная строка
     :rtype: str
     """
-    (str_1, str_2, str_3, str_4, str_5) = RECIPE
-    result = f"Рецепт {TITLE}:\n{str_1},\n{str_2},\n{str_3},\n{str_4},\n{str_5}"
+    # (str_1, str_2, str_3, str_4, str_5) = RECIPE
+    # result = f"Рецепт {TITLE}:\n{str_1},\n{str_2},\n{str_3},\n{str_4},\n{str_5}"
+    result = f"Рецепт {TITLE}:\n" + ',\n'.join(RECIPE)
     return result
 
 
